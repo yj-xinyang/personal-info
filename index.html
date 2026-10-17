@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>易军 · Java 开发工程师</title>
+  <meta name="description" content="易军的个人信息页面，展示 Java 后端开发技能、项目经历与联系方式。">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%234f46e5'/><text x='50' y='68' font-size='52' text-anchor='middle' fill='white' font-family='sans-serif' font-weight='bold'>易</text></svg>">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+  <a href="#main" class="skip-link">跳转到主要内容</a>
+
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a href="#hero" class="logo">
+        <span class="logo-mark">YJ</span>
+        <span class="logo-text">易军<span class="logo-dot">.</span>dev</span>
+      </a>
+
+      <nav id="mainNav" class="main-nav" aria-label="主导航">
+        <ul class="nav-list">
+          <li><a href="#about" class="nav-link">关于</a></li>
+          <li><a href="#skills" class="nav-link">技能</a></li>
+          <li><a href="#experience" class="nav-link">经历</a></li>
+          <li><a href="#projects" class="nav-link">项目</a></li>
+          <li><a href="#contact" class="nav-link">联系</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button id="themeToggle" class="theme-toggle" aria-label="切换深浅主题" title="切换深浅主题">
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32 1.41 1.41M2 12h2m16 0h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <button id="menuToggle" class="menu-toggle" aria-expanded="false" aria-controls="mainNav" aria-label="打开菜单">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero" id="hero">
+      <div class="hero-bg" aria-hidden="true">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+        <div class="hero-grid"></div>
+      </div>
+
+      <div class="container hero-inner">
+        <div class="hero-content">
+          <p class="hero-greeting reveal">你好，我是</p>
+          <h1 class="hero-name reveal">易军</h1>
+          <p class="hero-role reveal"><span id="typedText"></span><span class="cursor">|</span></p>
+
+          <ul class="hero-meta reveal">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>男 · 27 岁</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>上海</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10 12 5 2 10l10 5 10-5z"/><path d="M6 12v5c0 1.7 2.7 3 6 3s6-1.3 6-3v-5"/></svg>本科 · 计算机科学与技术</li>
+          </ul>
+
+          <div class="hero-status reveal">
+            <span class="status-dot"></span>离职 · 可立即上岗
+          </div>
+
+          <div class="hero-actions reveal">
+            <a href="#projects" class="btn btn-primary">查看项目</a>
+            <a href="#contact" class="btn btn-ghost">联系我</a>
+          </div>
+
+          <dl class="hero-stats reveal">
+            <div class="stat"><dt>项目经验</dt><dd>3<span>个</span></dd></div>
+            <div class="stat"><dt>开发经验</dt><dd>2<span>年+</span></dd></div>
+            <div class="stat"><dt>技术栈</dt><dd>10<span>+</span></dd></div>
+          </dl>
+        </div>
+      </div>
+
+      <a href="#about" class="scroll-hint" aria-label="向下滚动">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14m7-7-7 7-7-7"/></svg>
+      </a>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-kicker">About</span>
+          <h2 class="section-title">关于我</h2>
+        </div>
+        <div class="about-grid">
+          <article class="card about-card reveal">
+            <p>Java 开发工程师，具备扎实的 Java 基础与面向对象思维，熟悉 JVM 内存模型、常用垃圾回收算法与主流开源框架的整合开发。</p>
+            <p>参与过多个完整的后端项目，覆盖 B2B 供应链平台、健康管理业务系统与物联网监控系统，熟悉 Spring Boot、Spring Cloud、Dubbo 等微服务架构，具备权限控制、高并发数据处理等实战经验。</p>
+            <p>做事严谨、思路清晰，擅长在团队中沟通协作，能独立分析并解决问题，乐于钻研新技术并快速落地。</p>
+          </article>
+          <aside class="card about-side reveal">
+            <h3>基本信息</h3>
+            <ul class="info-list">
+              <li><span>姓名</span><strong>易军</strong></li>
+              <li><span>意向岗位</span><strong>Java 开发工程师</strong></li>
+              <li><span>工作年限</span><strong>2 年+</strong></li>
+              <li><span>城市</span><strong>上海</strong></li>
+              <li><span>学历</span><strong>本科 · 计算机科学与技术</strong></li>
+              <li><span>状态</span><strong class="highlight">离职可立即上岗</strong></li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section section-alt" id="skills">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-kicker">Skills</span>
+          <h2 class="section-title">专业技能</h2>
+        </div>
+        <div class="skills-grid">
+          <article class="card skill-card reveal">
+            <div class="skill-icon icon-lang">☕</div>
+            <h3>语言与基础</h3>
+            <p>Java 基础扎实，熟悉 OOP 思想、集合框架、IO、多线程与常用设计模式。</p>
+            <div class="tags"><span>Java</span><span>OOP</span><span>多线程</span><span>JVM</span><span>设计模式</span></div>
+          </article>
+          <article class="card skill-card reveal">
+            <div class="skill-icon icon-frame">🌱</div>
+            <h3>后端框架</h3>
+            <p>精通 Spring 全家桶与 MyBatis 整合开发，深入理解 Spring Boot 自动装配原理。</p>
+            <div class="tags"><span>Spring</span><span>Spring MVC</span><span>Spring Boot</span><span>MyBatis</span><span>Spring Security</span></div>
+          </article>
+          <article class="card skill-card reveal">
+            <div class="skill-icon icon-cloud">☁️</div>
+            <h3>微服务</h3>
+            <p>熟悉 Spring Cloud、Dubbo 微服务治理架构，参与过微服务项目开发。</p>
+            <div class="tags"><span>Spring Cloud</span><span>Dubbo</span><span>Zookeeper</span><span>RabbitMQ</span></div>
+          </article>
+          <article class="card skill-card reveal">
+            <div class="skill-icon icon-db">🗄️</div>
+            <h3>数据与中间件</h3>
+            <p>精通 MySQL 与 Redis，了解 Elasticsearch、Solr 全文检索与 IK 分词。</p>
+            <div class="tags"><span>MySQL</span><span>Redis</span><span>Elasticsearch</span><span>Solr</span></div>
+          </article>
+          <article class="card skill-card reveal">
+            <div class="skill-icon icon-ops">🐧</div>
+            <h3>运维与工具</h3>
+            <p>熟练操作 Linux、Docker、Nginx、Tomcat，熟练使用主流开发与测试工具。</p>
+            <div class="tags"><span>Linux</span><span>Docker</span><span>Nginx</span><span>Git</span><span>Maven</span><span>JMeter</span></div>
+          </article>
+          <article class="card skill-card reveal">
+            <div class="skill-icon icon-web">🎨</div>
+            <h3>前端技术</h3>
+            <p>熟悉 HTML、CSS、JavaScript，了解 Vue 与 Bootstrap，可独立完成前后端联调。</p>
+            <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Vue</span><span>Bootstrap</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="section" id="experience">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-kicker">Experience</span>
+          <h2 class="section-title">工作经历</h2>
+        </div>
+        <div class="timeline">
+          <article class="card timeline-card reveal">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <header class="timeline-head">
+              <div>
+                <h3>Java 开发工程师</h3>
+                <p class="timeline-company">郑州优万网络科技有限公司</p>
+              </div>
+              <span class="timeline-date">2019.11 — 2021.12</span>
+            </header>
+            <ul class="timeline-list">
+              <li>负责部分业务需求分析、业务数据建模与系统设计。</li>
+              <li>负责所分配功能模块的详细设计、功能开发、单元测试与代码优化。</li>
+              <li>遵循开发管理流程，编写和完善设计文档与操作手册。</li>
+              <li>结合项目需求，提出合理化建议，持续改进系统质量。</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section section-alt" id="projects">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-kicker">Projects</span>
+          <h2 class="section-title">项目经历</h2>
+        </div>
+        <div class="projects-list">
+          <article class="card project-card reveal">
+            <div class="project-index">01</div>
+            <div class="project-body">
+              <header class="project-head">
+                <h3>万合服装贸易供应链平台</h3>
+                <div class="project-meta"><span class="badge">后端开发</span><span class="project-date">2021.04 — 2021.12</span></div>
+              </header>
+              <p class="project-desc">面向服装商家的 B2B 分布式交易平台，由供应链管理后台、商户端、供应商端组成，为服装厂家和零售点提供商城平台、物流服务、商品监管、订单对接、运营服务等一站式服务。</p>
+              <ul class="project-points">
+                <li>负责供应链管理后台的商户管理模块，以及权限管理、角色管理模块。</li>
+                <li>基于 SpringSecurity 完成机构与员工的权限控制。</li>
+                <li>使用 Redis 实现购物车与订单创建，MySQL 锁实现减库存。</li>
+                <li>完成数据库表结构设计与搭建，优化查询效率与并发度。</li>
+              </ul>
+              <div class="tags"><span>Spring Boot</span><span>Spring Cloud</span><span>Spring Security</span><span>MyBatis-Plus</span><span>MySQL</span><span>Redis</span><span>RabbitMQ</span><span>ES</span></div>
+            </div>
+          </article>
+
+          <article class="card project-card reveal">
+            <div class="project-index">02</div>
+            <div class="project-body">
+              <header class="project-head">
+                <h3>智慧健康云管理平台</h3>
+                <div class="project-meta"><span class="badge">后端开发</span><span class="project-date">2020.06 — 2021.03</span></div>
+              </header>
+              <p class="project-desc">面向健康管理机构的业务系统，实现工作内容可视化、会员管理专业化、健康评估数字化、健康干预流程化，提升健康管理师工作效率与机构运营洞察力。</p>
+              <ul class="project-points">
+                <li>负责系统管理模块：菜单设置、角色管理、权限管理、用户管理。</li>
+                <li>设计并搭建用户、权限、角色、菜单五表及中间关系结构。</li>
+                <li>整合 SpringSecurity，完善登录、退出、权限控制与权限校验。</li>
+                <li>使用 MyBatis 完成各管理模块增删改查功能，编写接口文档与操作手册。</li>
+              </ul>
+              <div class="tags"><span>Spring Boot</span><span>Dubbo</span><span>Zookeeper</span><span>MyBatis</span><span>MySQL</span><span>Spring Security</span><span>Vue</span></div>
+            </div>
+          </article>
+
+          <article class="card project-card reveal">
+            <div class="project-index">03</div>
+            <div class="project-body">
+              <header class="project-head">
+                <h3>数据化实验室监控系统</h3>
+                <div class="project-meta"><span class="badge">后端开发</span><span class="project-date">2019.11 — 2020.05</span></div>
+              </header>
+              <p class="project-desc">面向高校实验室管理的可视化物联网系统，支持设备查询、在线预约、教室分配，实时监控实验室设施运行与维护情况，提升实验室综合使用效率。</p>
+              <ul class="project-points">
+                <li>负责实验室设备管理模块与用户管理模块的开发。</li>
+                <li>负责数据库设计与核心表关系搭建，选择合适的数据库引擎。</li>
+                <li>使用 Bootstrap 设计前端页面风格，搭建软件整体架构。</li>
+                <li>编写需求分析、设计文档与操作手册等完整项目文档。</li>
+              </ul>
+              <div class="tags"><span>Spring</span><span>Spring MVC</span><span>MyBatis</span><span>MySQL</span><span>Ajax</span><span>jQuery</span><span>Bootstrap</span></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Strengths -->
+    <section class="section" id="strengths">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-kicker">Strengths</span>
+          <h2 class="section-title">个人优势</h2>
+        </div>
+        <div class="strengths-grid">
+          <div class="card strength reveal"><div class="strength-icon">🧠</div><h3>逻辑思维强</h3><p>思路清晰，自学能力极强，对新技术有强烈的好奇心。</p></div>
+          <div class="card strength reveal"><div class="strength-icon">🛡️</div><h3>抗压能力好</h3><p>具备独立解决问题的能力，能从容应对开发中的挑战。</p></div>
+          <div class="card strength reveal"><div class="strength-icon">🤝</div><h3>沟通协作</h3><p>性格开朗，擅长团队合作，与同事沟通顺畅高效。</p></div>
+          <div class="card strength reveal"><div class="strength-icon">🚀</div><h3>总结上进</h3><p>善于总结复盘，持续学习，保持强烈的上进心。</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-kicker">Contact</span>
+          <h2 class="section-title">联系我</h2>
+        </div>
+        <div class="contact-grid">
+          <a href="tel:17630915020" class="card contact-card reveal">
+            <div class="contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
+            <div><h3>电话</h3><p>176-3091-5020</p></div>
+          </a>
+          <a href="mailto:17630915020@163.com" class="card contact-card reveal">
+            <div class="contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg></div>
+            <div><h3>邮箱</h3><p>17630915020@163.com</p></div>
+          </a>
+          <div class="card contact-card contact-note reveal">
+            <div class="contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></div>
+            <div><h3>到岗状态</h3><p>离职 · 可立即上岗</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2026 易军 · Java 开发工程师</p>
+      <p class="footer-sub">基于个人简历生成 · 用心打磨每一个页面</p>
+    </div>
+  </footer>
+
+  <script src="scripts/main.js"></script>
+</body>
+</html>
