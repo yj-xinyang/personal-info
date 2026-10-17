@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人简历 | Resume</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Microsoft YaHei", system-ui, sans-serif;
+        }
+        body {
+            background-color: #f4f7fa;
+            color: #333;
+            line-height: 1.6;
+            padding: 2rem 1rem;
+        }
+        .resume-container {
+            max-width: 850px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+        }
+        .header {
+            border-bottom: 2px solid #2c5282;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        .header h1 {
+            font-size: 32px;
+            color: #2d3748;
+        }
+        .header-info {
+            margin-top:8px;
+            color:#555;
+            display:flex;
+            flex-wrap:wrap;
+            gap:16px;
+        }
+        section {
+            margin-bottom:28px;
+        }
+        h2 {
+            font-size:20px;
+            color:#2c5282;
+            border-left:4px solid #2c5282;
+            padding-left:12px;
+            margin-bottom:16px;
+        }
+        .item {
+            margin-bottom:18px;
+        }
+        .item-top {
+            display:flex;
+            justify-content:space-between;
+            font-weight:bold;
+            font-size:17px;
+        }
+        .item-time {
+            color:#666;
+            font-weight:normal;
+            font-size:15px;
+        }
+        ul {
+            padding-left:22px;
+            margin-top:8px;
+        }
+        li {
+            margin-bottom:6px;
+        }
+        .skill-tag {
+            display:inline-block;
+            background:#edf2f7;
+            padding:4px 10px;
+            border-radius:16px;
+            margin:4px 6px 4px 0;
+            font-size:14px;
+        }
+        @media print {
+            body {background:#fff; padding:0;}
+            .resume-container {box-shadow:none;padding:20px;}
+        }
+        @media (max-width:600px) {
+            .resume-container {padding:20px;}
+            .item-top {flex-direction:column;}
+        }
+    </style>
+</head>
+<body>
+    <div class="resume-container">
+        <!-- 头部信息 -->
+        <div class="header">
+            <h1>张三</h1>
+            <div class="header-info">
+                <span>求职意向：Java开发工程师</span>
+                <span>电话：138-xxxx-xxxx</span>
+                <span>邮箱：example@email.com</span>
+                <span>GitHub：github.com/yourname</span>
+            </div>
+        </div>
+
+        <!-- 个人简介 -->
+        <section>
+            <h2>个人简介</h2>
+            <p>拥有X年Java后端开发经验，熟悉SpringBoot、MyBatis等主流开发框架；参与业务系统需求分析、接口开发与性能优化。具备良好的数据库设计能力，掌握MySQL基础优化，了解Linux服务器基础运维。注重代码规范，具备独立排查问题能力与团队协作能力。</p>
+        </section>
+
+        <!-- 工作经历 -->
+        <section>
+            <h2>工作经历</h2>
+            <div class="item">
+                <div class="item-top">
+                    <span>XX科技有限公司 | Java开发工程师</span>
+                    <span class="item-time">2022.07 - 2026.06</span>
+                </div>
+                <ul>
+                    <li>负责后端接口开发，基于SpringBoot搭建业务模块，编写RESTful接口，对接前端。</li>
+                    <li>参与MySQL数据库表设计，SQL优化，解决慢查询问题，提升接口响应速度。</li>
+                    <li>使用Git进行版本管理，参与CodeReview，保障代码质量。</li>
+                    <li>线上问题排查，定位bug，修复并输出复盘文档。</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- 项目经历 -->
+        <section>
+            <h2>项目经历</h2>
+            <div class="item">
+                <div class="item-top">
+                    <span>企业内部OA管理系统 | 后端开发</span>
+                    <span class="item-time">2024.02 - 2024.09</span>
+                </div>
+                <ul>
+                    <li>负责审批流模块开发，实现表单提交、流转、状态管理功能。</li>
+                    <li>使用MyBatis操作数据库，封装通用CRUD，减少重复代码。</li>
+                    <li>单元测试编写，保障接口稳定性。</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- 专业技能 -->
+        <section>
+            <h2>专业技能</h2>
+            <div>
+                <span class="skill-tag">Java</span>
+                <span class="skill-tag">SpringBoot</span>
+                <span class="skill-tag">MyBatis</span>
+                <span class="skill-tag">MySQL</span>
+                <span class="skill-tag">Git</span>
+                <span class="skill-tag">Linux</span>
+                <span class="skill-tag">Maven</span>
+                <span class="skill-tag">RESTful API</span>
+            </div>
+        </section>
+
+        <!-- 教育背景 -->
+        <section>
+            <h2>教育背景</h2>
+            <div class="item">
+                <div class="item-top">
+                    <span>XX大学 | 计算机科学与技术 | 本科</span>
+                    <span class="item-time">2018.09 - 2022.06</span>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
